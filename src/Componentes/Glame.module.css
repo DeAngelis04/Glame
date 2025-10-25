@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+body, html {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at top, #08001c, #000);
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.title {
+  font-family: 'DynaPuff', cursive;
+  font-size: 6rem;
+  margin-bottom: 2rem;
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glow 3s infinite linear;
+}
+
+
+
+.members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 900px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 1.5rem;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(252, 250, 250, 0.3);
+}
+
+.photoContainer {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.name {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  font-family: 'Playfair Display', serif;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+  margin-top: 0.8rem;
+}
+
+.socials a {
+  color: white;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.socials a:hover {
+  transform: scale(1.2);
+  color: #ffff;
+}
+
+
+.light {
+  background-image: url("/images/nubes-oscuras.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.8s ease-in-out;
+}
+
+.dark {
+  background-image: url("/images/oscuro.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.8s ease-in-out;
+}
+
+.toggleBtn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+  z-index: 1000;
+}
+
+.toggleBtn:hover {
+  transform: scale(1.2);
+  color: #ffff;
+}
+.glameGlow {
+  animation: glow 10s infinite;
+  animation-timing-function: linear;
+  will-change: filter;
+}
+
+@keyframes glow {
+  0%   { filter: drop-shadow(0 0 8px #7BB4E3); }
+  20%  { filter: drop-shadow(0 0 12px #F0B9D7); }
+  40%  { filter: drop-shadow(0 0 12px #588157); }
+  60%  { filter: drop-shadow(0 0 12px #9a7cc1); }
+  80%  { filter: drop-shadow(0 0 12px #ed54b3); }
+  100% { filter: drop-shadow(0 0 8px #7BB4E3); } /* vuelve al primer color suavemente */
+}
+
+
+
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem 0;
+    justify-content: flex-start;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+  }
+
+  .members {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .card {
+    width: 80%;
+  }
+}

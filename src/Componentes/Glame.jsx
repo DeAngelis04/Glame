@@ -30,7 +30,7 @@ const members = [
     color: "",
   },  {
     name: "Leivit",
-    photo: "/images/member2.jpg",
+    photo: "/images/lei.jpg",
     instagram: "https://www.instagram.com/leivitmusic/",
     color: "#F0B9D7",
   },
@@ -45,7 +45,7 @@ const members = [
   },
   {
     name: "Nai",
-    photo: "/images/member4.jpg",
+    photo: "/images/nai.jpg",
     instagram: "https://www.instagram.com/naii.kill?igsh=MW04bm13eDE5YXRucA==",
     tiktok: "https://www.tiktok.com/@naaa_nai?_t=ZM-900WB1P3U1z&_r=1",
     color: "#9a7cc1",

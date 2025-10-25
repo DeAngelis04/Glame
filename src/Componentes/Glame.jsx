@@ -56,6 +56,7 @@ const members = [
     instagram:
       "https://www.instagram.com/lolacetraro?igsh=cHhidTMzMTlmMTFz&utm_source=qr",
     tiktok: "https://www.tiktok.com/@loluxita?_t=ZS-8xtoVoOOXQ5&_r=1",
+    youtube: "https://youtube.com/@lolacetraro?si=sUgouUvYjY1Zvo3O",
     color: "#ed54b3",
   },
 ];
